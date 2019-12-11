@@ -32,14 +32,14 @@ else:
 
 def start_handler(bot, update):
     # Creating a handler-function for /start command
-    logger.info("User {} started bot".format(update.message.from_user['username']))
+    logger.info('ok')
     update.message.reply_text("oy from Python!\nPress /random to get random number")
 
 
 def random_handler(bot, update):
     # Creating a handler-function for /random command
     number = random.randint(0, 10)
-    logger.info("User {} randomed number {}".format(update.message.from_user['username'], number))
+    logger.info('ok rand')
     update.message.reply_text("Random number: {}".format(number))
 
 

@@ -12,7 +12,7 @@ logger = logging.getLogger()
 
 # Getting mode, so we could define run function for local and Heroku setup
 mode = 'prod'
-TOKEN ='1045860540:AAFPoXnRYeAXQ-h42rkzbIV_sVPq-Mtgmyo'
+TOKEN ='your_token'
 if mode == "dev":
     def run(updater):
         updater.start_polling()
